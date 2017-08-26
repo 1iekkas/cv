@@ -19,7 +19,7 @@
               <span>{{detail.birthday}}</span>
               <span>{{detail.constellation}}</span>
               <span>{{detail.live}}</span></p>
-            <p class="line"><i class="iconfont">&#xe600;</i>前端开发</p>
+            <p class="line"><i class="iconfont">&#xe600;</i>{{detail.job}}</p>
             <p class="top-line"><i class="iconfont">&#xe601;</i>{{detail.education}}</p>
             <p><i class="iconfont">&#xe615;</i>{{detail.call}}</p>
             <p><i class="iconfont">&#xe65c;</i>{{detail.wechat}}</p>
@@ -176,12 +176,13 @@ export default {
       detail:{
         name:'1iekkas',
         sex:'男',
+        job:'web开发',
         qq:'764295062',
         birthday:'22岁',
         constellation:'白羊座',
-        education:'广东机电职业技术学院',
+        education:'广东省佛山市高明区第四中学',
         live:'广东-佛山-禅城',
-        call:'15627795345',
+        call:'1562xx95345',
         motto:'why~?',
         wechat:'liekkasN1ce'
       },
