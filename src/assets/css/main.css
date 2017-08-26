@@ -75,7 +75,7 @@ a{
   padding: .35rem .1rem;
   width: 9.8rem;
   background:rgba(255,255,255,0);
-  transition: all 1s ;
+  transition: all .3s ;
 }
 .black{
     color: black
