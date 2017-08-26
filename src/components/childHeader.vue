@@ -45,7 +45,7 @@ export default{
          window.onscroll = function(){
            var t = document.documentElement.scrollTop || document.body.scrollTop;
            console.log(className);
-           if(t>50){
+           if(t>20){
              ele.style.background = "rgba(255,255,255,1)"
              ele.style.borderBottomWidth = "1px"
              ele.style.borderBottomColor = "#ccc"
