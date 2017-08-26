@@ -78,7 +78,7 @@ export default {
   data () {
     return {
       skill:[{
-        img:'http://i4.bvimg.com/605992/511f007652d6f81f.jpg',
+        img:'http://bmvisx.img48.wal8.com/img48/17283107_20170826212629/150375407383.png',
         content:'HTML',
         Proficiency:[{
           num:'90%',
@@ -87,7 +87,7 @@ export default {
         detail:'well,this is detail'
       },
       {
-        img:'http://i4.bvimg.com/605992/f460803172e32e03.jpg',
+        img:'http://bmvisx.img48.wal8.com/img48/17283107_20170826212629/150375407244.png',
         content:'CSS',
         Proficiency:[{
           num:'90%',
@@ -96,7 +96,7 @@ export default {
         detail:'well,this is detail'
       },
       {
-        img:'http://i4.bvimg.com/605992/7b7eac472c1c60be.jpg',
+        img:'http://bmvisx.img48.wal8.com/img48/17283107_20170826212629/150375407415.png',
         content:'JavaScript',
         Proficiency:[{
           num:'80%',
@@ -105,7 +105,7 @@ export default {
         detail:'well,this is detail'
       },
       {
-        img:'http://i4.bvimg.com/605992/a3f405032b1db71a.png',
+        img:'http://bmvisx.img48.wal8.com/img48/17283107_20170826212629/150375407482.png',
         content:'Vue.js',
         Proficiency:[{
           num:'75%',
@@ -114,7 +114,7 @@ export default {
         detail:'well,this is detail'
       },
       {
-        img:'http://i4.bvimg.com/605992/e3f3a235c9a66043.jpg',
+        img:'http://bmvisx.img48.wal8.com/img48/17283107_20170826212629/150375407277.png',
         content:'Git',
         Proficiency:[{
           num:'40%',
@@ -123,7 +123,7 @@ export default {
         detail:'well,this is detail'
       },
       {
-        img:'http://i4.bvimg.com/605992/8cd540dc105359d7.jpg',
+        img:'http://bmvisx.img48.wal8.com/img48/17283107_20170826212629/15037540731.png',
         content:'Github',
         Proficiency:[{
           num:'40%',
@@ -132,7 +132,7 @@ export default {
         detail:'well,this is detail'
       },
       {
-        img:'http://i4.bvimg.com/605992/6b7cbfbc5e73a95f.jpg',
+        img:'http://bmvisx.img48.wal8.com/img48/17283107_20170826212629/150375407446.png',
         content:'PhotoShop',
         Proficiency:[{
           num:'40%',
@@ -142,13 +142,13 @@ export default {
       },
       ],
       banner:[{
-        bannerUrl:'http://i4.bvimg.com/605992/402089ba3f037555.jpg'
+        bannerUrl:'http://bmvisx.img48.wal8.com/img48/17283107_20170826212629/150375407348.jpg'
       },
       {
-        bannerUrl:'http://i4.bvimg.com/605992/b79512c86046ab11.jpg'
+        bannerUrl:'http://bmvisx.img48.wal8.com/img48/17283107_20170826212629/150375407112.png'
       },
       {
-        bannerUrl:'http://i4.bvimg.com/605992/1cef46b0edb85d84.jpg'
+        bannerUrl:'http://bmvisx.img48.wal8.com/img48/17283107_20170826212629/150375407149.png'
       }
       ],
 
