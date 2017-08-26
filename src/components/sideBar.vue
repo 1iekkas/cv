@@ -29,7 +29,7 @@
   top: 0;
   left: -4.5rem;
   transition: all .5s;
-  background:url(http://i2.bvimg.com/605992/a49824bb466d6269.jpg) no-repeat;
+  background:url(http://storage1.imgchr.com/V5axU.jpg) no-repeat;
   background-size: 570%;
   background-position: 38% 10%;
   color: white;
