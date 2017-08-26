@@ -78,7 +78,7 @@ export default {
   data () {
     return {
       skill:[{
-        img:'http://i4.bvimg.com/605992/511f007652d6f81f.jpg',
+        img:'http://storage1.imgchr.com/V52RK.jpg',
         content:'HTML',
         Proficiency:[{
           num:'90%',
@@ -87,7 +87,7 @@ export default {
         detail:'well,this is detail'
       },
       {
-        img:'http://i4.bvimg.com/605992/f460803172e32e03.jpg',
+        img:'http://storage1.imgchr.com/V5saR.jpg',
         content:'CSS',
         Proficiency:[{
           num:'90%',
@@ -96,7 +96,7 @@ export default {
         detail:'well,this is detail'
       },
       {
-        img:'http://i4.bvimg.com/605992/7b7eac472c1c60be.jpg',
+        img:'http://storage1.imgchr.com/V5fMD.jpg',
         content:'JavaScript',
         Proficiency:[{
           num:'80%',
@@ -105,7 +105,7 @@ export default {
         detail:'well,this is detail'
       },
       {
-        img:'http://i4.bvimg.com/605992/a3f405032b1db71a.png',
+        img:'http://storage1.imgchr.com/V5hse.png',
         content:'Vue.js',
         Proficiency:[{
           num:'75%',
@@ -114,7 +114,7 @@ export default {
         detail:'well,this is detail'
       },
       {
-        img:'http://i4.bvimg.com/605992/e3f3a235c9a66043.jpg',
+        img:'http://storage1.imgchr.com/V5yI1.jpg',
         content:'Git',
         Proficiency:[{
           num:'40%',
@@ -123,7 +123,7 @@ export default {
         detail:'well,this is detail'
       },
       {
-        img:'http://i4.bvimg.com/605992/8cd540dc105359d7.jpg',
+        img:'http://storage1.imgchr.com/V5cPx.jpg',
         content:'Github',
         Proficiency:[{
           num:'40%',
@@ -132,7 +132,7 @@ export default {
         detail:'well,this is detail'
       },
       {
-        img:'http://i4.bvimg.com/605992/6b7cbfbc5e73a95f.jpg',
+        img:'http://storage1.imgchr.com/V5RxO.jpg',
         content:'PhotoShop',
         Proficiency:[{
           num:'40%',
@@ -142,13 +142,13 @@ export default {
       },
       ],
       banner:[{
-        bannerUrl:'http://i4.bvimg.com/605992/402089ba3f037555.jpg'
+        bannerUrl:'http://storage1.imgchr.com/V5gG6.jpg'
       },
       {
-        bannerUrl:'http://i4.bvimg.com/605992/b79512c86046ab11.jpg'
+        bannerUrl:'http://storage1.imgchr.com/V5BqJ.jpg'
       },
       {
-        bannerUrl:'http://i4.bvimg.com/605992/1cef46b0edb85d84.jpg'
+        bannerUrl:'http://storage1.imgchr.com/V5wMF.jpg'
       }
       ],
 
