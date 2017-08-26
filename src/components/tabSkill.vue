@@ -40,6 +40,7 @@
 }
 .skill-container .img{
   width: 1.5rem;
+  text-align: center;
 }
 .skill-container .img img{
   height: 1rem
@@ -64,7 +65,7 @@
 .skill-container .content p:nth-child(3) span{
 }
 .swiper-container{
-  max-height: 2.65rem;
+  max-height: 3rem;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets{
   bottom:0
@@ -141,7 +142,7 @@ export default {
       },
       ],
       banner:[{
-        bannerUrl:'http://i4.bvimg.com/605992/487d13bf36a17d56.png'
+        bannerUrl:'http://i4.bvimg.com/605992/402089ba3f037555.jpg'
       },
       {
         bannerUrl:'http://i4.bvimg.com/605992/b79512c86046ab11.jpg'
