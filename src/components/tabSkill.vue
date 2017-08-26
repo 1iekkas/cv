@@ -77,7 +77,7 @@ export default {
   data () {
     return {
       skill:[{
-        img:'/static/html.png',
+        img:'http://i4.bvimg.com/605992/511f007652d6f81f.jpg',
         content:'HTML',
         Proficiency:[{
           num:'90%',
@@ -86,7 +86,7 @@ export default {
         detail:'well,this is detail'
       },
       {
-        img:'/static/css.png',
+        img:'http://i4.bvimg.com/605992/f460803172e32e03.jpg',
         content:'CSS',
         Proficiency:[{
           num:'90%',
@@ -95,7 +95,7 @@ export default {
         detail:'well,this is detail'
       },
       {
-        img:'/static/js.png',
+        img:'http://i4.bvimg.com/605992/7b7eac472c1c60be.jpg',
         content:'JavaScript',
         Proficiency:[{
           num:'80%',
@@ -104,7 +104,7 @@ export default {
         detail:'well,this is detail'
       },
       {
-        img:'/static/vue.png',
+        img:'http://i4.bvimg.com/605992/a3f405032b1db71a.png',
         content:'Vue.js',
         Proficiency:[{
           num:'75%',
@@ -113,7 +113,7 @@ export default {
         detail:'well,this is detail'
       },
       {
-        img:'/static/git.png',
+        img:'http://i4.bvimg.com/605992/e3f3a235c9a66043.jpg',
         content:'Git',
         Proficiency:[{
           num:'40%',
@@ -122,7 +122,7 @@ export default {
         detail:'well,this is detail'
       },
       {
-        img:'/static/github.png',
+        img:'http://i4.bvimg.com/605992/8cd540dc105359d7.jpg',
         content:'Github',
         Proficiency:[{
           num:'40%',
@@ -131,7 +131,7 @@ export default {
         detail:'well,this is detail'
       },
       {
-        img:'/static/ps.png',
+        img:'http://i4.bvimg.com/605992/6b7cbfbc5e73a95f.jpg',
         content:'PhotoShop',
         Proficiency:[{
           num:'40%',
@@ -141,13 +141,13 @@ export default {
       },
       ],
       banner:[{
-        bannerUrl:'/static/banner.png'
+        bannerUrl:'http://i4.bvimg.com/605992/487d13bf36a17d56.png'
       },
       {
-        bannerUrl:'/static/banner1.png'
+        bannerUrl:'http://i4.bvimg.com/605992/b79512c86046ab11.jpg'
       },
       {
-        bannerUrl:'/static/banner2.png'
+        bannerUrl:'http://i4.bvimg.com/605992/1cef46b0edb85d84.jpg'
       }
       ],
 
