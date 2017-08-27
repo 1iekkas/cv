@@ -16,7 +16,7 @@
 html,body{
   margin: 0 auto;
   height:100%;
-  font-family:PingFangSC-Medium,'微软雅黑', sans-serif !important;
+  font-family:PingFangSC-Regular,PingFangSC-Medium,sans-serif !important;
 }
 body{
   width: 10rem;
