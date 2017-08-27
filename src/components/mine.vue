@@ -73,7 +73,7 @@
   text-align: center;
   font-size: .55rem;
   color: black;
-  font-family: 'Helvetica','Heiti SC',PingFangSC-Medium,'微软雅黑', sans-serif !important;
+  font-family:PingFangSC-Medium,'微软雅黑', sans-serif !important;
   font-weight: 100
 }
 .container-content{
@@ -120,7 +120,7 @@ p.top-line{
   margin-top: .5rem
 }
 h2.hobby-title,h2.my-tag-title{
-  font-family: 'Helvetica','Heiti SC',PingFangSC-Medium,'微软雅黑', sans-serif !important;
+  font-family:PingFangSC-Medium,'微软雅黑', sans-serif !important;
   position:relative;
 }
 h2.hobby-title::after,h2.hobby-title::before,h2.my-tag-title::after,h2.my-tag-title::before{
@@ -153,11 +153,11 @@ h2.hobby-title::before,h2.my-tag-title::before{
 .list div p:first-child{
   font-size: .45rem;
   color: black;
-  font-family: 'Helvetica','Heiti SC',PingFangSC-Medium,'微软雅黑', sans-serif !important;
+  font-family:PingFangSC-Medium,'微软雅黑', sans-serif !important;
 }
 .list div p:nth-child(2){
   font-size: .35rem;
-  font-family: 'Helvetica','Heiti SC',PingFangSC-Medium,'微软雅黑', sans-serif !important;
+  font-family:PingFangSC-Medium,'微软雅黑', sans-serif !important;
 }
 .editMotto{
   margin-left: 0.15rem
