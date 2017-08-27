@@ -94,7 +94,7 @@
   font-size: .4rem
 }
 .container-detail i{
-  font-size: .5rem;
+  font-size: .6rem;
   padding-right: .45rem;
   color:#909090;
 }
