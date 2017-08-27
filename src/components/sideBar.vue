@@ -23,14 +23,14 @@
 </template>
 <style scoped>
 .sideBar{
-  width: 4.5rem;
+  width: 7rem;
   height: 100%;
   position: absolute;
   top: 0;
-  left: -4.5rem;
+  left: -7rem;
   transition: all .5s;
   background:url(http://storage1.imgchr.com/V5axU.jpg) no-repeat;
-  background-size: 570%;
+  background-size: 360%;
   background-position: 38% 10%;
   color: white;
 }
@@ -40,16 +40,17 @@
 }
 .author{
   display: flex;
-  justify-content: center;
+  /*justify-content: center;*/
   align-items: center;
   font-size: .65rem;
-  padding-top: 1rem;
+  padding: 1rem 0 0 .45rem;
 }
 .state{
-  padding:.35rem .15rem 0 .15rem;
+  padding:.35rem .15rem 0 .45rem;
   overflow: hidden;
   text-overflow:ellipsis;
   white-space: nowrap;
+  text-align: left;
 }
 nav{
   margin-top: .5rem;

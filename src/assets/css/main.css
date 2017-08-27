@@ -16,7 +16,7 @@
 html,body{
   margin: 0 auto;
   height:100%;
-  font-family: 'Helvetica','Heiti SC','微软雅黑','PingFangSC-Medium', sans-serif !important;
+  font-family: 'Helvetica','Heiti SC',PingFangSC-Medium,'微软雅黑', sans-serif !important;
 }
 body{
   width: 10rem;
@@ -30,10 +30,10 @@ h2{
   font-size: .5rem;
   text-align: left;
   color: #5B9EE4;
-  font-family: '微软雅黑'
+  font-family: 'Helvetica','Heiti SC',PingFangSC-Medium,'微软雅黑', sans-serif !important;
 }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica','Heiti SC',PingFangSC-Medium,'微软雅黑', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -64,7 +64,7 @@ a{
   transition: left .5s ;
 }
 .activeLeft{
-  margin-left: 4.5rem;
+  margin-left: 7rem;
   transition: all .5s;
 }
 .child-header{
