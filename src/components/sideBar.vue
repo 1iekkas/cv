@@ -5,7 +5,7 @@
         <img src="../assets/avatar.jpg">
         <span>1iekkas</span>
       </div>
-      <p class="state">give me some time,please</p>
+      <p class="state">I need some time,please</p>
       <nav>
         <ul>
           <!--<li>home</li>

@@ -1,7 +1,7 @@
 <template>
   <div class="mine">
     <div class="wapper" v-bind:class="{activeLeft:isActive}">
-      <child-header   :titleFontColor="titleFontColor"></child-header>
+      <child-header   :titleFontColor="titleFontColor" :titleValue="titleValue"></child-header>
       <div class="container">
         <div class="container-header">
           <img src="http://i2.bvimg.com/605992/c061eb2e3b622cbc.jpg" width="100%">
@@ -36,7 +36,9 @@
           </div>
           <div class="container-tag">
             <h2 class="my-tag-title" align="center">个人标签</h2>
-            这家伙没留下任何标签
+            <div class="tag-wapper">
+              <p class="tag">还没有标签</p>
+            </div>
           </div>
         </div>
       </div>
@@ -118,6 +120,17 @@ p.top-line{
 .container-hobby,.container-tag{
   margin-top: .5rem
 }
+/*.tag-wapper{
+  -webkit-column-count:3;
+    -moz-column-count:3;
+    column-count:3;
+
+    -webkit-column-gap:10px;
+    -moz-column-gap:10px;
+    column-gap:10px;
+
+    column-rule:3px outset #ff0000;
+}*/
 h2.hobby-title,h2.my-tag-title{
   position:relative;
 }
@@ -160,6 +173,12 @@ h2.hobby-title::before,h2.my-tag-title::before{
 .editMotto{
   margin-left: 0.15rem
 }
+p.tag{
+  font-size: .7rem;
+  text-align: center;
+  color: black;
+  margin-top: .3rem;
+}
 </style>
 <script>
 import childHeader from '@/components/childHeader'
@@ -169,35 +188,35 @@ export default {
     return {
       msg: 'Welcome!',
       isActive:'',
-      title:'个人资料',
       titleFontColor:'white',
+      titleValue:'Mine',
       detail:{
         name:'1iekkas',
         sex:'男',
-        job:'web开发',
+        job:'web Front-end',
         qq:'764295062',
         birthday:'22岁',
         constellation:'白羊座',
         education:'广东省佛山市高明区第四中学',
         live:'广东-佛山-禅城',
         call:'1562xx95345',
-        motto:'why~?',
+        motto:'why not?',
         wechat:'liekkasN1ce'
       },
       hobbies:[{
-        title:'竞技游戏',
+        title:'game',
         picUrl:'http://i2.bvimg.com/605992/ff8f380e7269ebc0.jpg',
-        content:'偶尔打打LOL,对了开黑吗，我贼6'
+        content:'i like e-sports!'
       },
       {
-        title:'音乐',
+        title:'music',
         picUrl:'http://i2.bvimg.com/605992/e24576d5c8881332.jpg',
-        content:'一天不听几首electronic浑身难受'
+        content:'i like electronic-music too'
       },
       {
-        title:'代码',
+        title:'code',
         picUrl:'http://i4.bvimg.com/605992/0c9d829aa9a0d272.jpg',
-        content:'靠它吃饭的家伙'
+        content:'i like code too'
       }
     ]
     }

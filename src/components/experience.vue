@@ -1,7 +1,7 @@
 <template>
   <div class="experience">
     <div class="wapper">
-      <child-header :titleFontColor="titleFontColor"></child-header>
+      <child-header :titleFontColor="titleFontColor" :titleValue="titleValue" ></child-header>
       <div class="bg-container">
       <div class="fixed-bg">
         <img src="../assets/e-bg.jpg" width="100%" />
@@ -56,6 +56,8 @@ export default {
     return {
       msg: 'Welcome!',
       active:0,
+      titleFontColor:'black',
+      titleValue:'Experience',
       tabList:[{
         content:'Skill',
         icon:'',

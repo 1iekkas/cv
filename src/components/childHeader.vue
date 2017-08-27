@@ -5,7 +5,7 @@
       <span class="iconfont">&#xe697;</span>
       <span>返回</span>
       </div>
-      title
+      {{titleValue}}
     </div>
   </div>
 </template>
@@ -24,14 +24,15 @@
 export default{
   data () {
     return {
-      data:''
+      data:'',
     }
   },
-  props:['titleFontColor'],
+  props:['titleFontColor','titleValue'],
   mounted() {
 
     this.$nextTick(function () {
       this.getScroll(this.titleFontColor)
+      console.log(this.titleValue)
     })
   },
   methods: {
@@ -58,6 +59,9 @@ export default{
            }
          }
      },
+     changeTitle () {
+
+     }
   },
 
 }
