@@ -13,16 +13,12 @@
           <div class="container-detail">
             <h2>{{detail.name}}</h2>
             <p align="center" class="motto">{{detail.motto}}<i @click="editMotto" class="iconfont editMotto">&#xe6e8;</i></p>
-            <p><i class="iconfont">&#xe680;</i>{{detail.qq}}</p>
-            <p class="s"><i class="iconfont">&#xe635;</i>
-              <span>{{detail.sex}}</span>
-              <span>{{detail.birthday}}</span>
-              <span>{{detail.constellation}}</span>
-              <span>{{detail.live}}</span></p>
-            <p class="line"><i class="iconfont">&#xe600;</i>{{detail.job}}</p>
-            <p class="top-line"><i class="iconfont">&#xe601;</i>{{detail.education}}</p>
-            <p><i class="iconfont">&#xe615;</i>{{detail.call}}</p>
-            <p><i class="iconfont">&#xe65c;</i>{{detail.wechat}}</p>
+            <p class="info"><i class="iconfont">&#xe680;</i>{{detail.qq}}</p>
+            <p class="s info"><i class="iconfont">&#xe635;</i><span>{{detail.sex}}</span><span>{{detail.birthday}}</span><span>{{detail.constellation}}</span><span>{{detail.live}}</span></p>
+            <p class="line info"><i class="iconfont">&#xe600;</i>{{detail.job}}</p>
+            <p class="top-line info"><i class="iconfont">&#xe601;</i>{{detail.education}}</p>
+            <p class="info"><i class="iconfont">&#xe615;</i>{{detail.call}}</p>
+            <p class="info"><i class="iconfont">&#xe65c;</i>{{detail.wechat}}</p>
           </div>
           <div class="container-hobby">
             <h2 class="hobby-title" align="center">兴趣爱好</h2>
@@ -101,10 +97,13 @@
   font-size: .5rem;
   padding-right: .45rem;
   color:#909090;
-  vertical-align: sub;
 }
 p.motto{
   color: #9c9c9c
+}
+.info{
+  display: flex;
+  align-items: center;
 }
 .s span{
   padding-right: .25rem;
