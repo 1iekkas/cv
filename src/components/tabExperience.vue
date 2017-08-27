@@ -50,7 +50,7 @@
   margin-left: .5rem;
   border:1px solid #e0e0e0;
   position: relative;
-  height: 3rem;
+  height: 3.6rem;
   border-radius: 3px;
 }
 .experience .content::after,.experience .content::before{
