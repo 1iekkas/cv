@@ -85,7 +85,7 @@
   margin-bottom: .35rem
 }
 .container-content p{
-  padding: .1rem 0;
+  padding: .15rem 0;
   color: #9c9c9c;
   font-size: .35rem;
 }
