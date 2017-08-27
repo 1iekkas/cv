@@ -73,7 +73,7 @@
   text-align: center;
   font-size: .55rem;
   color: black;
-  font-family: 'Helvetica';
+  font-family: 'Helvetica','Heiti SC','微软雅黑';
   font-weight: 100
 }
 .container-content{
@@ -120,7 +120,7 @@ p.top-line{
   margin-top: .5rem
 }
 h2.hobby-title,h2.my-tag-title{
-  font-family: '微软雅黑';
+  font-family: 'Helvetica','Heiti SC','微软雅黑';
   position:relative;
 }
 h2.hobby-title::after,h2.hobby-title::before,h2.my-tag-title::after,h2.my-tag-title::before{
@@ -153,11 +153,11 @@ h2.hobby-title::before,h2.my-tag-title::before{
 .list div p:first-child{
   font-size: .45rem;
   color: black;
-  font-family: '微软雅黑'
+  font-family: 'Helvetica','Heiti SC','微软雅黑'
 }
 .list div p:nth-child(2){
-  font-size: .3rem;
-  font-family: '微软雅黑'
+  font-size: .35rem;
+  font-family: 'Helvetica','Heiti SC','微软雅黑'
 }
 .editMotto{
   margin-left: 0.15rem
@@ -194,12 +194,12 @@ export default {
       {
         title:'音乐',
         picUrl:'http://i2.bvimg.com/605992/e24576d5c8881332.jpg',
-        content:'一天不听几首电子浑身难受'
+        content:'一天不听几首electronic浑身难受'
       },
       {
         title:'代码',
         picUrl:'http://i4.bvimg.com/605992/0c9d829aa9a0d272.jpg',
-        content:'吃饭的家伙,能不爱么?~'
+        content:'靠它吃饭的家伙'
       }
     ]
     }

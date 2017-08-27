@@ -1,6 +1,11 @@
 <template>
-<div>333</div>
+  <div class="container">
+
+  </div>
 </template>
+<style>
+
+</style>
 <script>
 export default {
   data () {

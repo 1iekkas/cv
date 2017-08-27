@@ -53,6 +53,10 @@
 .skill-container .content p{
   padding-bottom: .1rem;
 }
+.skill-container .content p:first-child{
+  font-size: .35rem;
+  font-weight: bold;
+}
 .skill-container .content p:nth-child(3){
   display: flex;
   align-items: center;
@@ -82,7 +86,7 @@ export default {
         content:'HTML',
         Proficiency:[{
           num:'90%',
-          width:'3.9rem'
+          width:'3.6rem'
         }],
         detail:'well,this is detail'
       },
@@ -91,7 +95,7 @@ export default {
         content:'CSS',
         Proficiency:[{
           num:'90%',
-          width:'3.9rem'
+          width:'3.6rem'
         }],
         detail:'well,this is detail'
       },
@@ -100,7 +104,7 @@ export default {
         content:'JavaScript',
         Proficiency:[{
           num:'80%',
-          width:'3.8rem'
+          width:'3.2rem'
         }],
         detail:'well,this is detail'
       },
@@ -109,7 +113,7 @@ export default {
         content:'Vue.js',
         Proficiency:[{
           num:'75%',
-          width:'3.75rem'
+          width:'3rem'
         }],
         detail:'well,this is detail'
       },
@@ -118,7 +122,7 @@ export default {
         content:'Git',
         Proficiency:[{
           num:'40%',
-          width:'3.4rem'
+          width:'1.6rem'
         }],
         detail:'well,this is detail'
       },
@@ -127,7 +131,7 @@ export default {
         content:'Github',
         Proficiency:[{
           num:'40%',
-          width:'3.4rem'
+          width:'1.6rem'
         }],
         detail:'well,this is detail'
       },
@@ -136,7 +140,7 @@ export default {
         content:'PhotoShop',
         Proficiency:[{
           num:'40%',
-          width:'3.4rem'
+          width:'1.6rem'
         }],
         detail:'well,this is detail'
       },
@@ -160,6 +164,8 @@ export default {
          centeredSlides: true,
          paginationClickable: true,
          spaceBetween: 30,
+         autoplayDisableOnInteraction:false,
+         autoplay:5000,
          loop:true,
              onSlideChangeEnd: swiper => {
                  //这个位置放swiper的回调方法
