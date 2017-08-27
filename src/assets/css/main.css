@@ -30,10 +30,10 @@ h2{
   font-size: .5rem;
   text-align: left;
   color: #5B9EE4;
-  font-family: PingFangSC-Medium,'微软雅黑', sans-serif !important;
+  font-family:PingFangSC-Regular,sans-serif !important;
 }
 #app {
-  font-family: PingFangSC-Medium,'微软雅黑', sans-serif !important;
+  font-family:PingFangSC-Regular,sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
