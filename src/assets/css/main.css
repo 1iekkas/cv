@@ -16,7 +16,7 @@
 html,body{
   margin: 0 auto;
   height:100%;
-  font-family: 'Helvetica','Heiti SC','微软雅黑'
+  font-family: 'Helvetica','Heiti SC','微软雅黑','PingFangSC-Medium', sans-serif !important;
 }
 body{
   width: 10rem;
