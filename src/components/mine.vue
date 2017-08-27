@@ -85,7 +85,7 @@
 .container-content span{
   color: black;
   display: block;
-  font-size: .35rem;
+  font-size: .4rem;
   margin-bottom: .35rem
 }
 .container-content p{
