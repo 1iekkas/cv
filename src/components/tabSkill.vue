@@ -54,7 +54,7 @@
   padding-bottom: .1rem;
 }
 .skill-container .content p:first-child{
-  font-size: .35rem;
+  font-size: .4rem;
   font-weight: bold;
 }
 .skill-container .content p:nth-child(3){
