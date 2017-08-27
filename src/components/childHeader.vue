@@ -5,7 +5,7 @@
       <span class="iconfont">&#xe697;</span>
       <span>返回</span>
       </div>
-      {{titleValue}}
+      <span>{{titleValue}}</span>
     </div>
   </div>
 </template>
@@ -13,6 +13,9 @@
 .back{
   position: relative;
   font-size: .45rem
+}
+.back span{
+  font-weight: bold;
 }
 .back-btn{
   position: absolute;

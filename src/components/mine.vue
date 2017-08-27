@@ -95,6 +95,7 @@
 }
 .container-detail p{
   color: black;
+  font-size: .4rem
 }
 .container-detail i{
   font-size: .5rem;
@@ -167,7 +168,7 @@ h2.hobby-title::before,h2.my-tag-title::before{
   font-family:PingFangSC-Regular,sans-serif !important;
 }
 .list div p:nth-child(2){
-  font-size: .35rem;
+  font-size: .4rem;
   font-family:PingFangSC-Regular,sans-serif !important;
 }
 .editMotto{
