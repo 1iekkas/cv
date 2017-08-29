@@ -1,8 +1,9 @@
 <template>
-  <div id="app" >
+  <div id="app">
     <transition :name="transitionName">
       <router-view></router-view>
     </transition>
+    <span>{{cX}}</span>
   </div>
 </template>
 
@@ -11,18 +12,14 @@ export default {
   name: 'app',
   data () {
     return {
-      transitionName:'slide-left'
+      transitionName:'slide-left',
     }
   },
   methods: {
   },
   watch: {
     '$route' (to, from) {
-
       let isBack = this.$router.isBack
-      let cX = this.$router.cX
-
-      alert(cX);
       console.log(isBack)
       if(isBack) {
 　　　　　　　　this.transitionName = 'slide-right'
