@@ -22,7 +22,7 @@ export default {
       let isBack = this.$router.isBack
       let cX = this.$router.cX
 
-      console.log(cX);
+      alert(cX);
       console.log(isBack)
       if(isBack) {
 　　　　　　　　this.transitionName = 'slide-right'
