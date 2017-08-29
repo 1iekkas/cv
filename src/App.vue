@@ -25,17 +25,18 @@ export default {
       div.addEventListener('touchmove',function(e){
           //touchmove:触摸进行时，这里的e包含的触摸的元素信息
         //(div.clientWidth);
+        this.cX = event.touches[0].pageX
       })
       div.addEventListener('touchend',function(e){
           //touchend:触摸结束的一瞬间，这里的e没有多大的作用
-          this.cX = div.clientWidth
+
       });
 
     }
   },
   watch: {
     '$route' (to, from) {
-      alert(this.cX);
+      alert(this.cX)
       let isBack = this.$router.isBack
       console.log(isBack)
       if(isBack) {
