@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" @touchstart="touch">
     <transition :name="transitionName">
       <router-view></router-view>
     </transition>
@@ -12,6 +12,24 @@ export default {
   data () {
     return {
       transitionName:'slide-left'
+    }
+  },
+  methods: {
+    touch () {
+      var div=document.getElementById('app')
+      div.addEventListener('touchstart',function(e){
+          //touchstart:触摸开始的一瞬间，这里的e包含的触摸一瞬间所触摸的元素的信息
+          alert(div.clientWidth)
+      })
+      div.addEventListener('touchmove',function(e){
+          //touchmove:触摸进行时，这里的e包含的触摸的元素信息
+        alert(div.clientWidth);
+      })
+      div.addEventListener('touchend',function(e){
+          //touchend:触摸结束的一瞬间，这里的e没有多大的作用
+          console.log(div.clientWidth)
+      });
+
     }
   },
   watch: {
