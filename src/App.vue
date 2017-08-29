@@ -21,11 +21,7 @@ export default {
 
       let isBack = this.$router.isBack
       let cX = this.$router.cX
-      if(cX = 750){
-        alert('1');
-      }else{
-        alert('2');
-      }
+
       console.log(cX);
       console.log(isBack)
       if(isBack) {
