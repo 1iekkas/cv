@@ -11,7 +11,8 @@ export default {
   name: 'app',
   data () {
     return {
-      transitionName:'slide-left'
+      transitionName:'slide-left',
+      cX:''
     }
   },
   methods: {
@@ -27,14 +28,14 @@ export default {
       })
       div.addEventListener('touchend',function(e){
           //touchend:触摸结束的一瞬间，这里的e没有多大的作用
-          alert(div.clientWidth)
+          this.cX = div.clientWidth
       });
 
     }
   },
   watch: {
     '$route' (to, from) {
-      this.touch ()
+      alert(this.cX);
       let isBack = this.$router.isBack
       console.log(isBack)
       if(isBack) {
