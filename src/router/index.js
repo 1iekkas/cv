@@ -8,6 +8,12 @@ Vue.use(Router)
 Router.prototype.goBack = function () {  //重点，给VueRoute添加一个goBack方法，用于记录路由的前进后退状态 this.isBack = true
 　　this.isBack = true
 　　window.history.go(-1)
+  var div=document.getElementById('app')
+  this.cX = div.clientWidth
+  
+
+
+
 }
 export default new Router({
   routes: [
