@@ -1,9 +1,8 @@
 <template>
   <div id="app">
     <transition :name="transitionName">
-      <router-view></router-view>
+        <router-view></router-view>
     </transition>
-    <span>{{cX}}</span>
   </div>
 </template>
 
@@ -12,21 +11,23 @@ export default {
   name: 'app',
   data () {
     return {
-      transitionName:'slide-left',
+      transitionName:'slide-left'
     }
   },
-  methods: {
+  methods:{
+  
   },
   watch: {
     '$route' (to, from) {
       let isBack = this.$router.isBack
       console.log(isBack)
       if(isBack) {
-　　　　　　　　this.transitionName = 'slide-right'
+　　　　　　　 this.transitionName = 'slide-right'
 　　　　　　} else {
 　　　　　　   this.transitionName = 'slide-left'
 　　　　　}
-      this.$router.isBack = false;
+      //浏览器前进后退按钮会触发事件，因此设定！isBack ？？
+      this.$router.isBack = !isBack;
       console.log(this.transitionName)
     },
   }
@@ -46,18 +47,18 @@ export default {
   transform:translateX(10rem);
 }*/
 .slide-left-enter-active, .slide-left-leave-active,.slide-right-enter-active, .slide-right-leave-active{
-  transition: all 0.35s ease
+  transition: all .5s cubic-bezier(.55,0,.1,1);
 }
 .slide-left-enter,
  .slide-right-leave-active {
-     opacity: 0;
+     opacity: 1;
     -webkit-transform: translate(100%, 0);
     transform: translate(100%, 0);
 }
 
 .slide-left-leave-active,
 .slide-right-enter {
-     opacity: 0;
+     opacity: 1;
     -webkit-transform: translate(-100%, 0);
     transform: translate(-100% 0);
 }

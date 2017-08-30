@@ -45,7 +45,7 @@ export default {
   methods: {
     change:function (msg) {
       this.isActive = msg ;
-      console.log(this.isActive)
+      //console.log(this.isActive)
     }
   }
 }
