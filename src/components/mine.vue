@@ -262,6 +262,8 @@ export default {
         this.editedMottoShow = !this.editedMottoShow
     },
     blur () {
+      this.nativeMottoShow = true
+      this.editedMottoShow = false
       event.currentTarget.blur();
     }
   },
