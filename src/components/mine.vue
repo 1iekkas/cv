@@ -1,5 +1,5 @@
 <template>
-  <div class="mine" @click="cblur">
+  <div class="mine">
     <div class="wapper" v-bind:class="{activeLeft:isActive}">
       <child-header   :titleFontColor="titleFontColor" :titleValue="titleValue"></child-header>
       <div class="container">
@@ -11,6 +11,7 @@
         </div>
         <div class="container-content">
           <div class="container-detail">
+            <input type="text" placeholder="123" />
             <h2>{{detail.name}}</h2>
             <div align="center" class="motto">
               <span v-show="nativeMottoShow">{{detail.motto}}</span>
