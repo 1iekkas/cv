@@ -1,5 +1,5 @@
 <template>
-  <div class="mine">
+  <div class="mine" @click="blur">
     <div class="wapper" v-bind:class="{activeLeft:isActive}">
       <child-header   :titleFontColor="titleFontColor" :titleValue="titleValue"></child-header>
       <div class="container">
