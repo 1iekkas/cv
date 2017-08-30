@@ -14,7 +14,7 @@
             <h2>{{detail.name}}</h2>
             <div align="center" class="motto">
               <span v-show="nativeMottoShow">{{detail.motto}}</span>
-              <span v-show="editedMottoShow"><input v-focus v-blur type="text" v-model.trim="detail.motto" maxlength="20" /></span>
+              <span v-show="editedMottoShow"><input v-focus=" val = detail.motto" v-blur="val = detail.motto" type="text" v-model.trim="detail.motto" maxlength="20" /></span>
               <i
                 @click="editMotto"
                 v-if="nativeMottoShow == true"
@@ -271,15 +271,15 @@ export default {
   directives: {
     focus:function(el,value){
       //console.log(value);
-
+      if(value){
         el.focus();
-
+      }
     },
     blur:function(el,value){
       //console.log(value);
-
+      if(value){
         el.blur();
-
+      }
     }
   }
 }
