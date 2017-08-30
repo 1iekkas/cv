@@ -1,5 +1,5 @@
 <template>
-  <div class="mine" @click="blur">
+  <div class="mine" @click="cblur">
     <div class="wapper" v-bind:class="{activeLeft:isActive}">
       <child-header   :titleFontColor="titleFontColor" :titleValue="titleValue"></child-header>
       <div class="container">
@@ -265,6 +265,10 @@ export default {
       this.nativeMottoShow = true
       this.editedMottoShow = false
       event.currentTarget.blur();
+    },
+    cblur () {
+      this.nativeMottoShow = true
+      this.editedMottoShow = false
     }
   },
   watch: {
