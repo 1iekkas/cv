@@ -3,7 +3,7 @@
     <div class="shadow">
       <div class="author">
         <img src="../assets/avatar.jpg">
-        <span>1iekkas</span>
+        <span>1iekkas❤</span>
       </div>
       <p class="state">I need some time,please</p>
       <nav>
@@ -66,7 +66,8 @@ img{
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  margin-right: 0.25rem
+  margin-right: 0.25rem;
+  border: 4px solid #fff;
 }
 </style>
 <script>

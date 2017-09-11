@@ -4,7 +4,7 @@
       <child-header   :titleFontColor="titleFontColor" :titleValue="titleValue"></child-header>
       <div class="container">
         <div class="container-header">
-          <img src="http://i2.bvimg.com/605992/c061eb2e3b622cbc.jpg" width="100%">
+          <img src="https://s1.imgchr.com/2017/09/11/nAkfs.jpg" width="100%">
         </div>
         <div class="container-author">
           <img src="../assets/avatar.jpg" />
@@ -13,22 +13,8 @@
           <div class="container-detail">
             <h2>{{detail.name}}</h2>
             <div align="center" class="motto">
-              <span v-show="nativeMottoShow">{{detail.motto}}</span>
-              <span v-show="editedMottoShow"><input v-focus @blur="blur" type="text" v-model.trim="detail.motto" maxlength="20" /></span>
-              <i
-                @click="editMotto"
-                v-if="nativeMottoShow == true"
-                class="iconfont editMotto"
-              >
-                &#xe6e8;
-              </i>
-              <i
-                @click="editMotto"
-                v-else
-                class="iconfont editMotto"
-              >
-                &#xe778;
-              </i>
+              <span>{{detail.motto}}</span>
+              <i @click="showEditTemplate" class="iconfont editMotto">&#xe6e8;</i>
             </div>
             <p class="info"><i class="iconfont">&#xe680;</i>{{detail.qq}}</p>
             <p class="s info"><i class="iconfont">&#xe635;</i><span>{{detail.sex}}</span><span>{{detail.birthday}}</span><span>{{detail.constellation}}</span><span>{{detail.live}}</span></p>
@@ -55,6 +41,15 @@
           </div>
         </div>
       </div>
+    </div>
+    <!--editTemplate-->
+    <div id="edit-template-container">
+      <edit-motto ref="edit"
+        v-show="editTemplateShow"
+        @postEditValue="postEditValue"
+        @getEditTemplateShowVal="getEditTemplateShowVal"
+        :mottoValue="detail.motto"
+        ></edit-motto>
     </div>
   </div>
 </template>
@@ -86,7 +81,7 @@
 }
 .container-content h2{
   text-align: center;
-  font-size: .55rem;
+  font-size: .65rem;
   color: black;
   font-weight: 100
 }
@@ -110,14 +105,29 @@
   color: black;
   font-size: .4rem
 }
+.motto{
+  position:relative;
+}
+.motto i{
+  position: absolute;
+  top: .23rem;
+  right:-.35rem
+}
 .container-detail i{
-  font-size: .6rem;
+  font-size: .5rem;
   padding-right: .45rem;
   color:#909090;
 }
-div.motto{
-  color: #9c9c9c;
-  padding: .15rem 0
+div.motto span{
+  color: #777 !important;
+  font-size: .55rem;
+  padding: .15rem 0;
+  width:8rem;
+  word-break:break-all;
+  display:-webkit-box;
+  -webkit-line-clamp:1;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
 }
 .info{
   display: flex;
@@ -209,6 +219,7 @@ p.tag{
 </style>
 <script>
 import childHeader from '@/components/childHeader'
+import editMotto from '@/components/editMotto'
 export default {
   name: 'hello',
   data () {
@@ -217,10 +228,10 @@ export default {
       isActive:'',
       titleFontColor:'white',
       titleValue:'Mine',
-      nativeMottoShow:true,
-      editedMottoShow:false,
+      editTemplateShow:false,
+      ifShow:true,
       detail:{
-        name:'1iekkas',
+        name:'1iekkas❤',
         sex:'男',
         job:'web Front-end',
         qq:'764295062',
@@ -229,7 +240,7 @@ export default {
         education:'广东省佛山市高明区第四中学',
         live:'广东-佛山-禅城',
         call:'1562xx95345',
-        motto:'why not?',
+        motto:'leave this pleace with me ? ',
         wechat:'liekkasN1ce'
       },
       hobbies:[{
@@ -251,7 +262,8 @@ export default {
     }
   },
   components:{
-    childHeader:childHeader
+    childHeader:childHeader,
+    editMotto:editMotto
   },
   mounted(){
 
@@ -262,6 +274,16 @@ export default {
         this.editedMottoShow = !this.editedMottoShow
         console.log(this.nativeMottoShow)
         console.log(this.editedMottoShow)
+    },
+    showEditTemplate () {
+      const elem = document.getElementById('edit-template-container');
+      this.editTemplateShow = !this.editTemplateShow
+      if(this.editTemplateShow){
+        elem.className = 'show'
+        this.$refs.edit.getActive()
+      }else{
+        elem.className = 'hide'
+      }
     },
     blur () {
       this.nativeMottoShow = true
@@ -274,6 +296,22 @@ export default {
       console.log(this.nativeMottoShow)
       console.log(this.editedMottoShow)
 
+    },
+    getEditTemplateShowVal (data) {
+      this.editTemplateShow = data.editTemplateShow
+      //console.log(data)
+    },
+    postEditValue (data) {
+        this.editTemplateShow = data.editTemplateShow
+        const newMotto = data.value
+        //console.log(data)
+        if(newMotto==this.detail.motto){
+          return false
+        }else if(newMotto==''){
+          this.detail.motto = 'Motto null...'
+        }else{
+          this.detail.motto = newMotto
+        }
     }
   },
   watch: {
