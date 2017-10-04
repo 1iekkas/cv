@@ -1,5 +1,5 @@
 <template>
-  <div class="music">
+  <div class="music" @mousewheel="getScrollTop">
     <div class="wapper">
       <child-header :titleFontColor="titleFontColor" :titleValue="titleValue" ></child-header>
       <div class="bg-container">
@@ -228,12 +228,17 @@ export default {
       this.activeIndex = index ;
       this.listLength = length ;
       elem.style.left = 0;
-      let scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-      scrollTop = 0 ;
     },
 
     //
-
+    getScrollTop:function () {
+      window.onscroll = function(){
+        let top = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+        if(top>0){
+          top = 0 ;
+        }
+      }
+    }
 
   }
 }
