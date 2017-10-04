@@ -52,6 +52,9 @@
   height: 100%;
   overflow-x: hidden;
 }
+.music .wapper {
+  height: 100% !important ;
+}
 .audio-container{
   position: absolute;
   top: 0;
@@ -234,6 +237,7 @@ export default {
     getScrollTop:function () {
       window.onscroll = function(){
         let top = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+        alert(top);
         if(top>0){
           top = 0 ;
         }
