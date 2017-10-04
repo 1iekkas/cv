@@ -231,6 +231,8 @@ export default {
       this.activeIndex = index ;
       this.listLength = length ;
       elem.style.left = 0;
+      let top = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+      alert(top);
     },
 
     //
