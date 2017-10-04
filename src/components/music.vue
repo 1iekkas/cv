@@ -56,7 +56,7 @@
   height: 100% !important ;
 }
 .audio-container{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 10rem;
   height: 100%;
@@ -231,20 +231,10 @@ export default {
       this.activeIndex = index ;
       this.listLength = length ;
       elem.style.left = 0;
-      let top = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-      alert(top);
     },
 
     //
-    getScrollTop:function () {
-      window.onscroll = function(){
-        let top = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-        alert(top);
-        if(top>0){
-          top = 0 ;
-        }
-      }
-    }
+
 
   }
 }

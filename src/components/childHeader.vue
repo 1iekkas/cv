@@ -48,7 +48,6 @@ export default{
          var oldClass = ele.getAttribute('class');
          window.onscroll = function(){
            var t = document.documentElement.scrollTop || document.body.scrollTop;
-           alert(t);
            console.log(className);
            if(t>20){
              ele.style.webkitBackdropFilter = "blur(90px)";
