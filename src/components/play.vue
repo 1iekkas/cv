@@ -57,25 +57,25 @@
         privileges:[{
           name:'leave this pleace',
           author:'LIONE - Leave This Place',
-          url:'http://comtest.jychina.com:8766/templets/nicc/video/1.mp3',
+          url:'http://comtest.jychina.com:8766/templets/nicc/video/1..mp3',
           img:'https://s1.ax1x.com/2017/09/28/lof6H.jpg'
         },
         {
           name:'Unbreakable(Original Mix)',
           author:'Hyper Potions/Danyka Nadeau',
-          url:'http://comtest.jychina.com:8766/templets/nicc/video/2.mp3',
+          url:'http://comtest.jychina.com:8766/templets/nicc/video/2..mp3',
           img:'http://p1.music.126.net/fjjCx4Kr__TJ84INHNf2Ig==/1415071472294134.jpg?param=130y130'
         },
         {
           name:'小半',
           author:'陈粒',
-          url:'http://comtest.jychina.com:8766/templets/nicc/video/3.mp3',
+          url:'http://comtest.jychina.com:8766/templets/nicc/video/3..mp3',
           img:'http://p1.music.126.net/HQxTggMCB7AHUXN-ZFEtmA==/1371091013186741.jpg?param=130y130'
         },
         {
           name:'All I See',
           author:'Draper/Laura Brehm - All I See',
-          url:'http://comtest.jychina.com:8766/templets/nicc/video/4.mp3',
+          url:'http://comtest.jychina.com:8766/templets/nicc/video/4..mp3',
           img:'http://p1.music.126.net/YqLRQK5yx283Te-f5EuVlg==/1366692966298773.jpg?param=130y130'
         }
       ]
