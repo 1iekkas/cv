@@ -26,7 +26,8 @@
           <p>播放全部</p>
         </div>
         <div class="music-list">
-          <div v-for="(item,index) in privileges" class="item">
+          <div  v-for="(item,index) in privileges" class="item"
+           @click="ShowAudio(index,privileges.length)">
             <div>{{index + 1}}</div>
             <div class="detail">
               <p>{{item.name}}</p>
@@ -37,8 +38,10 @@
       </div>
       <!--music list end-->
     </div>
-      <div class="audio-container">
-        <play></play>
+      <div class="audio-container" @touchmove.prevent>
+        <keep-alive>
+          <play :activeIndex='activeIndex' :listLength="listLength"></play>
+        </keep-alive>
       </div>
     <!--audio end-->
   </div>
@@ -47,16 +50,17 @@
 .music{
   position: relative;
   height: 100%;
+  overflow-x: hidden;
 }
 .audio-container{
   position: absolute;
   top: 0;
-  left: 0;
+  left: 10rem;
   height: 100%;
   background: white;
   min-width: 10rem;
   z-index: 999;
-  display: none
+  transition: all .35s;
 }
 .bg-container{
   max-width: 10rem;
@@ -142,7 +146,7 @@
 }
 .play-all p i{
   font-size: .55rem;
-  vertical-align: bottom;
+  vertical-align: baseline;
 }
 .play-all p:first-child,.item div:first-child{
   width: 1.35rem;
@@ -173,28 +177,26 @@ export default {
       titleFontColor:'white',
       titleValue:'Music',
       transitionName:'slide-left',
+      activeIndex:'',
+      listLength:'',
       playlist:[{
         coverImgUrl:'',
       }],
       privileges:[{
         name:'leave this pleace',
         author:'LIONE - Leave This Place',
-        url:''
       },
       {
         name:'Unbreakable(Original Mix)',
         author:'Hyper Potions/Danyka Nadeau',
-        url:''
       },
       {
         name:'小半',
         author:'陈粒',
-        url:''
       },
       {
         name:'All I See',
         author:'Draper/Laura Brehm - All I See',
-        url:''
       }
     ]
     }
@@ -204,9 +206,11 @@ export default {
     play
   },
   mounted(){
-    this.login();
+    /*this.login();*/
+
   },
   methods: {
+    //
     login:function(){
       var _this = this
       this.$ajax.get('api/login/cellphone?phone=15627795345&password=1iekkas').then(function(res){
@@ -216,7 +220,21 @@ export default {
         _this.playlist = res.data.playlist;
         _this.privileges = res.data.privileges;
       });
-    }
+    },
+
+    //
+    ShowAudio:function(index,length){
+      var elem = document.getElementsByClassName('audio-container')[0];
+      this.activeIndex = index ;
+      this.listLength = length ;
+      elem.style.left = 0;
+      let scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+      scrollTop = 0 ;
+    },
+
+    //
+
+
   }
 }
 </script>
