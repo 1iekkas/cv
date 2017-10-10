@@ -1,5 +1,5 @@
 <template>
-  <div class="music" @mousewheel="getScrollTop">
+  <div class="music">
     <div class="wapper">
       <child-header :titleFontColor="titleFontColor" :titleValue="titleValue" ></child-header>
       <div class="bg-container">
